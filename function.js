@@ -71,14 +71,14 @@
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
     function greet(word){
-      if(typeof word === "string"){
-        console.log('Hello,' + word);
+      if(isNaN(word) === true){
+        console.log('Hello, ' + word);
       } else{
-        console.log('THAT IS NOT A NAME');
+        console.log(word +' IS NOT A NAME');
       }
     }
 
-    console.log(greet("Nick"));
+    console.log(greet('Nick'));
 
 
 // Q6
@@ -91,6 +91,7 @@
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+
   function madlib(w, x , y , x) {
       combinedWords = w + " " + x + " " + y + " " + x;
       return combinedWords;
