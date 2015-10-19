@@ -23,37 +23,31 @@
 // Q1
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
-  var answer;
-  var numbers =sum(1,3);
+
   function sum(numOne, numTwo){
-    answer = numOne + numTwo;
-    return answer;
+    return numOne + numTwo;
 }
-  console.log(answer);
+  console.log(sum(5, 6));
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
-  var answerTwo;
-  var threeNumber = avg(5, 6, 8);
-  function avg(numOne, numTwo, numThree){
-    answerTwo = numOne + numTwo + numThree / 3;
-    return answerTwo;
+
+  function avg(numOne, numTwo, numThree, divNum){
+    return numOne + numTwo + numThree / divNum ;
   }
 
-  console.log(answerTwo);
+  console.log(avg(2, 3 , 4 , 5));
 
 
 
 // Q3
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
-  var stringLength;
-  var word = "Hello Me";
-  function getLength(){
-    stringLength = word.length;
-    return stringLength ;
+
+  function getLength(word){
+    return word;
   }
-  console.log(length);
+  console.log(getLength("Hello World"));
 
 
 // Q4
@@ -61,18 +55,14 @@
 // two parameters and returns `true` if the second
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
-  var answerThree;
-  var moeNumbers = greaterThan(4, 8)
   function greaterThan(numOne, numTwo){
     if(numOne < numTwo){
-        answerFour = true;
-        return answerThree;
+        return true;
     } else{
-       answerFour = false;
-       return answerThree;
+       return false;
     }
   }
-  console.log(answerFour);
+  console.log(greaterThan(1, 2));
 
 
 // Q5
@@ -80,15 +70,15 @@
 // single parameter and returns a string that
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
-    var stringTest = greet('hello')
     function greet(word){
       if(typeof word === "string"){
-        console.log('Hello, Name!');
+        console.log('Hello, Person!');
       } else{
         console.log('That is not a string');
       }
     }
 
+    console.log(greet("hello"));
 
 
 // Q6
@@ -101,13 +91,11 @@
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
-  var combinedWords;
-  var wordyWords = madlib("Hello", "You", "Guy", "Man")
   function madlib(w, x , y , x) {
       combinedWords = w + " " + x + " " + y + " " + x;
       return combinedWords;
   }
-  console.log(combinedWords);
+  console.log(madlib("hello", "How", "are", "you"));
 
 
 
