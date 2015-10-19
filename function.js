@@ -72,13 +72,13 @@
 // is the parameter that was passed in.
     function greet(word){
       if(typeof word === "string"){
-        console.log('Hello, Person!');
+        console.log('Hello,' + word);
       } else{
-        console.log('That is not a string');
+        console.log('THAT IS NOT A NAME');
       }
     }
 
-    console.log(greet("hello"));
+    console.log(greet("Nick"));
 
 
 // Q6
