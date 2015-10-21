@@ -32,11 +32,11 @@
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-  function avg(numOne, numTwo, numThree, divNum){
-    return numOne + numTwo + numThree / divNum ;
+function avg(numOne, numTwo, numThree){
+    return (numOne + numTwo + numThree) / 3 ;
   }
 
-  console.log(avg(2, 3 , 4 , 5));
+  console.log(avg(2, 3 , 4));
 
 
 
@@ -72,13 +72,13 @@
 // is the parameter that was passed in.
     function greet(word){
       if(isNaN(word) === true){
-        console.log('Hello, ' + word);
+        return word;
       } else{
-        console.log(word +' IS NOT A NAME');
       }
     }
 
-    console.log(greet('Nick'));
+    console.log("Hello " + greet ("Nick"))
+
 
 
 // Q6
